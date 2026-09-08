@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DanishMart local supermarket - groceries, vegetables, cosmetics and everyday essentials." />
+  <title>DanishMart — Everything You Need, Under One Roof</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">🚚 Local delivery available • 📱 Order easily on WhatsApp</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="DanishMart home">
+        <span class="brand-icon">🛒</span>
+        <span><strong>Danish</strong>Mart</span>
+      </a>
+
+      <form class="header-search" id="headerSearchForm">
+        <span>⌕</span>
+        <input id="headerSearch" type="search" placeholder="Search groceries, vegetables, cosmetics..." autocomplete="off" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" title="Account">👤</button>
+        <button class="cart-btn" id="openCart" type="button" aria-label="Open cart">
+          🛒 <span>Cart</span><b id="cartCount">0</b>
+        </button>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">☰</button>
+    </div>
+
+    <nav class="category-nav" id="categoryNav">
+      <div class="container nav-inner">
+        <button class="nav-category active" data-category="all">All</button>
+        <button class="nav-category" data-category="vegetables">🥬 Vegetables</button>
+        <button class="nav-category" data-category="grocery">🛒 Grocery</button>
+        <button class="nav-category" data-category="cosmetics">💄 Cosmetics</button>
+        <button class="nav-category" data-category="personal-care">🧴 Personal Care</button>
+        <button class="nav-category" data-category="household">🧹 Household</button>
+        <button class="nav-category" data-category="beverages">🥤 Beverages</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">YOUR LOCAL SUPERMARKET</span>
+          <h1>Everything you need, <span>under one roof.</span></h1>
+          <p>Fresh vegetables, groceries, cosmetics and daily essentials — easy to find and even easier to order.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Shop Products</a>
+            <a class="btn btn-whatsapp" href="#whatsapp-order">💬 Order on WhatsApp</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Fresh stock</span><span>✓ Local delivery</span><span>✓ Easy ordering</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card hero-card-main">
+            <div class="hero-card-top"><span>Today's basket</span><span>● Fresh</span></div>
+            <div class="basket-products">
+              <div><span>🥬</span><p>Vegetables</p><b>Fresh</b></div>
+              <div><span>🍚</span><p>Groceries</p><b>Daily</b></div>
+              <div><span>🧴</span><p>Essentials</p><b>Ready</b></div>
+            </div>
+            <div class="basket-total"><span>Shop your essentials</span><strong>₹ &nbsp;Great Value</strong></div>
+          </div>
+          <div class="floating-offer"><strong>🔥 Hot Deal</strong><span>Save more on selected items</span></div>
+          <div class="floating-delivery">🚚 <strong>Fast local delivery</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-strip">
+      <div class="container">
+        <div class="search-box-large">
+          <div class="search-icon">🔍</div>
+          <div class="search-content">
+            <label for="mainSearch">What are you looking for?</label>
+            <input id="mainSearch" type="search" placeholder="Try “tomato”, “rice”, “shampoo”..." autocomplete="off" />
+            <div class="popular-searches">
+              <span>Popular:</span>
+              <button data-search="rice">Rice</button>
+              <button data-search="tomato">Tomato</button>
+              <button data-search="soap">Soap</button>
+              <button data-search="shampoo">Shampoo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">BROWSE EASILY</span><h2>Shop by Category</h2></div>
+          <button class="text-btn" data-category="all">View all →</button>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-green" data-category="vegetables"><span class="category-image">🥦</span><strong>Vegetables</strong><small>Fresh every day</small></button>
+          <button class="category-card category-yellow" data-category="grocery"><span class="category-image">🛒</span><strong>Grocery</strong><small>Everyday essentials</small></button>
+          <button class="category-card category-pink" data-category="cosmetics"><span class="category-image">💄</span><strong>Cosmetics</strong><small>Beauty & care</small></button>
+          <button class="category-card category-blue" data-category="personal-care"><span class="category-image">🧴</span><strong>Personal Care</strong><small>For the whole family</small></button>
+          <button class="category-card category-orange" data-category="household"><span class="category-image">🧹</span><strong>Household</strong><small>Keep home fresh</small></button>
+          <button class="category-card category-purple" data-category="beverages"><span class="category-image">🥤</span><strong>Beverages</strong><small>Drinks & more</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section deals-section" id="deals">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">SAVE MORE</span><h2>🔥 Today's Best Deals</h2></div><button class="text-btn" data-deals="true">See all deals →</button></div>
+        <div class="product-grid" id="dealProducts"></div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-heading products-heading"><div><span class="eyebrow">FIND IT FAST</span><h2 id="productsTitle">Popular Products</h2></div></div>
+        <div class="product-toolbar">
+          <div id="resultInfo">Showing popular products</div>
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="popular">Sort: Popular</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state hidden" id="emptyState"><div>🔎</div><h3>No products found</h3><p>Try another search or browse a category.</p><button class="btn btn-dark" id="clearSearch">Show all products</button></div>
+      </div>
+    </section>
+
+    <section class="whatsapp-section" id="whatsapp-order">
+      <div class="container whatsapp-card">
+        <div><span class="wa-badge">WHATSAPP ORDERING</span><h2>Don't want to browse? Just send us your list.</h2><p>Message the store with your shopping list. We'll confirm availability, total and delivery details.</p></div>
+        <a class="btn btn-whatsapp btn-large" id="directWhatsapp" target="_blank" rel="noopener" href="#">💬 Order on WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefit"><span>🥬</span><div><h3>Fresh Products</h3><p>Fresh daily essentials and vegetables.</p></div></div>
+          <div class="benefit"><span>💰</span><div><h3>Great Prices</h3><p>Good value on your everyday basket.</p></div></div>
+          <div class="benefit"><span>🚚</span><div><h3>Local Delivery</h3><p>Convenient delivery in your area.</p></div></div>
+          <div class="benefit"><span>📱</span><div><h3>Easy WhatsApp Orders</h3><p>Simple ordering with no long forms.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-section" id="contact">
+      <div class="container store-grid">
+        <div><span class="eyebrow">COME VISIT US</span><h2>Your neighborhood store.</h2><p>Drop by for your daily essentials or send us your list on WhatsApp and we'll take it from there.</p><div class="store-details"><div><span>📍</span><p><strong>Address</strong><br /> Market Road, kataka</p></div><div><span>🕐</span><p><strong>Opening Hours</strong><br />Mon – Sun · 8:00 AM – 10:00 PM</p></div><div><span>📞</span><p><strong>Call / WhatsApp</strong><br />+91 6205273508</p></div></div></div>
+        <div class="map-placeholder"><div>📍</div><h3>Store Location</h3><p>Add your Google Maps embed here later.</p><button class="btn btn-light">Get Directions</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div><a href="#home" class="brand footer-brand"><span class="brand-icon">🛒</span><span><strong>Danish</strong>Mart</span></a><p>Everything you need, under one roof.</p></div><div class="footer-links"><a href="#categories">Categories</a><a href="#deals">Offers</a><a href="#products">Products</a><a href="#contact">Contact</a></div><div class="footer-copy">© 2026 DanishMart. All rights reserved.</div></div></footer>
+
+  <div class="floating-whatsapp"><a id="floatingWhatsapp" target="_blank" rel="noopener" href="#" aria-label="Order on WhatsApp">💬</a></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-overlay" id="closeCart"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header"><div><span class="eyebrow">YOUR BASKET</span><h2>Your Cart</h2></div><button class="close-btn" id="closeCartBtn">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><div>🛒</div><h3>Your cart is empty</h3><p>Add products and send your order straight to WhatsApp.</p></div>
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-subtotal"><span>Estimated total</span><strong id="cartTotal">₹0</strong></div>
+        <small>Final total and delivery charges will be confirmed by the store.</small>
+        <button class="btn btn-whatsapp btn-full" id="cartWhatsapp">💬 Send Order on WhatsApp</button>
+        <button class="clear-cart" id="clearCart">Clear cart</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
